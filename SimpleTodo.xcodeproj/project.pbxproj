@@ -13,6 +13,8 @@
 		0394D87D290186CF00208DDC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0394D87C290186CF00208DDC /* Preview Assets.xcassets */; };
 		0394D87F290186CF00208DDC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0394D87E290186CF00208DDC /* Persistence.swift */; };
 		0394D882290186CF00208DDC /* SimpleTodo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0394D880290186CF00208DDC /* SimpleTodo.xcdatamodeld */; };
+		0394D88A2901871700208DDC /* SimpleTodoModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0394D8882901871700208DDC /* SimpleTodoModel.xcdatamodeld */; };
+		0394D88D290187F000208DDC /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0394D88C290187F000208DDC /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		0394D87C290186CF00208DDC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0394D87E290186CF00208DDC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		0394D881290186CF00208DDC /* SimpleTodo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleTodo.xcdatamodel; sourceTree = "<group>"; };
+		0394D8892901871700208DDC /* SimpleTodoModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SimpleTodoModel.xcdatamodel; sourceTree = "<group>"; };
+		0394D88C290187F000208DDC /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,12 +59,14 @@
 		0394D874290186CE00208DDC /* SimpleTodo */ = {
 			isa = PBXGroup;
 			children = (
+				0394D88B290187CE00208DDC /* Managers */,
 				0394D875290186CE00208DDC /* SimpleTodoApp.swift */,
 				0394D877290186CE00208DDC /* ContentView.swift */,
 				0394D879290186CF00208DDC /* Assets.xcassets */,
 				0394D87E290186CF00208DDC /* Persistence.swift */,
 				0394D880290186CF00208DDC /* SimpleTodo.xcdatamodeld */,
 				0394D87B290186CF00208DDC /* Preview Content */,
+				0394D8882901871700208DDC /* SimpleTodoModel.xcdatamodeld */,
 			);
 			path = SimpleTodo;
 			sourceTree = "<group>";
@@ -71,6 +77,14 @@
 				0394D87C290186CF00208DDC /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0394D88B290187CE00208DDC /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0394D88C290187F000208DDC /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,10 +157,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0394D88D290187F000208DDC /* CoreDataManager.swift in Sources */,
 				0394D87F290186CF00208DDC /* Persistence.swift in Sources */,
 				0394D878290186CE00208DDC /* ContentView.swift in Sources */,
 				0394D876290186CE00208DDC /* SimpleTodoApp.swift in Sources */,
 				0394D882290186CF00208DDC /* SimpleTodo.xcdatamodeld in Sources */,
+				0394D88A2901871700208DDC /* SimpleTodoModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +370,16 @@
 			);
 			currentVersion = 0394D881290186CF00208DDC /* SimpleTodo.xcdatamodel */;
 			path = SimpleTodo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		0394D8882901871700208DDC /* SimpleTodoModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0394D8892901871700208DDC /* SimpleTodoModel.xcdatamodel */,
+			);
+			currentVersion = 0394D8892901871700208DDC /* SimpleTodoModel.xcdatamodel */;
+			path = SimpleTodoModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
